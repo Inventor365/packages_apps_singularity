@@ -75,6 +75,7 @@ enum class TargetMode(val symbol: String) {
     AUTO(""),
     LEAF_HACK("?"),
     CERT_GEN("!"),
+    SKIP("-"),
 }
 
 // AppEntry kept for external references; internally we use AppListEntry +
@@ -238,6 +239,8 @@ private fun TrickyStoreAppSettingsContent(
                         result[trimmed.dropLast(1)] = TargetMode.LEAF_HACK
                     trimmed.endsWith("!") ->
                         result[trimmed.dropLast(1)] = TargetMode.CERT_GEN
+                    trimmed.endsWith("-") ->
+                        result[trimmed.dropLast(1)] = TargetMode.SKIP
                     else ->
                         result[trimmed] = TargetMode.AUTO
                 }
@@ -610,6 +613,9 @@ private fun TrickyStoreAppSettingsContent(
                                                                     TargetMode.CERT_GEN ->
                                                                         stringResource(
                                                                             R.string.ts_mode_cert)
+                                                                    TargetMode.SKIP ->
+                                                                        stringResource(
+                                                                            R.string.ts_mode_skip)
                                                                 },
                                                                 style = MaterialTheme.typography
                                                                     .labelSmall,
