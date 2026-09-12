@@ -1091,6 +1091,13 @@
     <string name="pif_active_config">Configuración activa</string>
     <string name="pif_no_config">No hay ninguna configuración cargada</string>
     <string name="pif_config_loaded">Configuración cargada</string>
+    <string name="pif_auto_fetch_title">Obtener automáticamente el último PIF Canary</string>
+    <string name="pif_auto_fetch_summary">Obtener y aplicar automáticamente la huella digital Canary más reciente y sin bloquear</string>
+    <string name="pif_advanced_category_title">Opciones avanzadas</string>
+    <string name="pif_manual_select_device_title">Seleccionar dispositivo Canary específico</string>
+    <string name="pif_manual_select_device_summary">Elegir manualmente un modelo de dispositivo específico de la lista de compilaciones Canary de Google</string>
+    <string name="pif_auto_update_title">Autorrenovar al caducar</string>
+    <string name="pif_auto_update_summary">Actualizar automáticamente la huella digital Canary cuando esté cerca de caducar (solo mientras se carga con Wi-Fi, 0% de impacto en la batería)</string>
     <string name="pif_fetch_pixel_beta">Obtener huella digital de Pixel Beta</string>
     <string name="pif_fetch_pixel_beta_summary">Descargar la última huella digital de Pixel Beta desde Google</string>
     <string name="pif_fetching">Obteniendo desde Google…</string>
@@ -1108,7 +1115,7 @@
     <string name="pif_select_device">Seleccionar dispositivo</string>
     <string name="pif_generating">Generando configuración…</string>
     <string name="pif_footer_title">Superar la integridad básica</string>
-    <string name="pif_footer_body">1. Toca "Obtener huella digital de Pixel Beta" y selecciona un dispositivo de la lista.\n2. Si no se encuentran dispositivos, importa una configuración de PIF que funcione desde una fuente confiable. No se proporcionan archivos de configuración.\n3. Vuelve a comprobar tu estado de Play Integrity.\n\nElimina siempre la configuración activa antes de cargar una nueva. Cargar una configuración de PIF caducada hará que la integridad reforzada de TrickyStore falle incluso con un keybox válido.</string>
+    <string name="pif_footer_body">1. Toca \"Obtener automáticamente el último PIF Canary\" para obtener y activar la huella digital de Google Canary más reciente y sin bloquear.\n2. Toca \"Configuración activa\" para ver propiedades detalladas, antigüedad de lanzamiento y estado de caducidad.\n3. Activa \"Autorrenovar al caducar\" para permitir la renovación automática en segundo plano al conectar el cargador con Wi-Fi (sin impacto en la batería).\n\nSi prefieres configuraciones personalizadas, puedes importar tu propio archivo JSON o .prop mediante \"Importar configuración\".</string>
     <string name="pif_select_channel">Seleccionar canal</string>
     <string name="pif_channel_latest_release">Última versión</string>
     <string name="pif_channel_canary_release">Versión canary</string>

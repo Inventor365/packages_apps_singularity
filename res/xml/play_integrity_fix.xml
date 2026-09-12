@@ -34,9 +34,9 @@
             android:selectable="false" />
 
         <Preference
-            android:key="pif_fetch_beta"
-            android:title="@string/pif_fetch_pixel_beta"
-            android:summary="@string/pif_fetch_pixel_beta_summary" />
+            android:key="pif_auto_fetch"
+            android:title="@string/pif_auto_fetch_title"
+            android:summary="@string/pif_auto_fetch_summary" />
 
         <Preference
             android:key="pif_import_config"
@@ -47,6 +47,23 @@
             android:key="pif_delete_config"
             android:title="@string/pif_delete_config"
             android:summary="@string/pif_delete_config_summary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pif_advanced_category"
+        android:title="@string/pif_advanced_category_title"
+        android:dependency="spoof_pif_enabled">
+
+        <org.lunaris.settings.preferences.SystemSettingSwitchPreference
+            android:key="spoof_pif_auto_update"
+            android:title="@string/pif_auto_update_title"
+            android:summary="@string/pif_auto_update_summary"
+            android:defaultValue="true" />
+
+        <Preference
+            android:key="pif_manual_select_device"
+            android:title="@string/pif_manual_select_device_title"
+            android:summary="@string/pif_manual_select_device_summary" />
     </PreferenceCategory>
 
     <PreferenceCategory

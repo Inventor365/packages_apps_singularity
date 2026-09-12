@@ -1091,6 +1091,13 @@
     <string name="pif_active_config">Active configuration</string>
     <string name="pif_no_config">No configuration loaded</string>
     <string name="pif_config_loaded">Configuration loaded</string>
+    <string name="pif_auto_fetch_title">Auto-fetch latest Canary PIF</string>
+    <string name="pif_auto_fetch_summary">Automatically fetch and apply the freshest unbanned Canary fingerprint</string>
+    <string name="pif_advanced_category_title">Advanced options</string>
+    <string name="pif_manual_select_device_title">Select specific Canary device</string>
+    <string name="pif_manual_select_device_summary">Manually choose a specific device model from Google\'s Canary build list</string>
+    <string name="pif_auto_update_title">Auto-renew when expiring</string>
+    <string name="pif_auto_update_summary">Automatically refresh the Canary fingerprint when near expiration (only while charging on Wi-Fi, 0% battery impact)</string>
     <string name="pif_fetch_pixel_beta">Fetch Pixel Beta fingerprint</string>
     <string name="pif_fetch_pixel_beta_summary">Download the latest Pixel Beta fingerprint from Google</string>
     <string name="pif_fetching">Fetching from Google\u2026</string>
@@ -1108,7 +1115,7 @@
     <string name="pif_select_device">Select device</string>
     <string name="pif_generating">Generating configuration\u2026</string>
     <string name="pif_footer_title">Passing basic integrity</string>
-    <string name="pif_footer_body">1. Tap "Fetch Pixel Beta fingerprint" and select a device from the list.\n2. If no devices are found, import a working PIF config from a trusted source. Config files are not provided.\n3. Recheck your Play Integrity status.\n\nAlways delete the active configuration before loading a new one. Loading an expired PIF config will cause TrickyStore strong integrity to fail even with a valid keybox.</string>
+    <string name="pif_footer_body">1. Tap \"Auto-fetch latest Canary PIF\" to automatically obtain and activate the freshest unbanned Google Canary fingerprint.\n2. Tap \"Active configuration\" to view detailed properties, release age, and expiration status.\n3. Enable \"Auto-renew when expiring\" to allow automatic background renewal when connected to a charger on Wi-Fi (zero battery impact).\n\nIf you prefer custom configurations or private fingerprints, you can still import your own JSON or .prop file via \"Import configuration\".</string>
     <string name="pif_select_channel">Select channel</string>
     <string name="pif_channel_latest_release">Latest release</string>
     <string name="pif_channel_canary_release">Canary release</string>
